@@ -146,18 +146,32 @@ nav {
 }
 
 .project-card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 15px;
-  overflow: hidden;
-  transition: 0.3s;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 
-.project-info {
-  padding: 1.5rem;
+.project-card h3 {
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.project-card p {
+  color: #ccc;
+  margin: 0;
+}
+
+.container {
+  padding: 40px 20px;
 }
 
 .social-links {
@@ -278,7 +292,8 @@ nav {
 </section>
 
 <section id="projects" class="container">
-  <h2>Featured Projects</h2>
+  <h2 style="color: white;">Featured Projects</h2>
+
   <a href="https://kobo-ai.streamlit.app/" target="_blank" style="text-decoration: none; color: inherit;">
     <div class="project-card">
       <div class="project-info">
@@ -287,6 +302,7 @@ nav {
       </div>
     </div>
   </a>
+
   <a href="https://kobo-ai.streamlit.app/" target="_blank" style="text-decoration: none; color: inherit;">
     <div class="project-card">
       <div class="project-info">
@@ -295,29 +311,32 @@ nav {
       </div>
     </div>
   </a>
-    <div class="project-card">
-      <div class="project-info">
-        <h3>Integrating Sentiment Analysis into Stock Prediction Models</h3>
-        <p>Advanced forecasting models for Nigerian and US markets</p>
-      </div>
+
+  <div class="project-card">
+    <div class="project-info">
+      <h3>Integrating Sentiment Analysis into Stock Prediction Models</h3>
+      <p>Advanced forecasting models for Nigerian and US markets</p>
     </div>
-    <div class="project-card">
-      <div class="project-info">
-        <h3>Portfolio Construction</h3>
-        <p>For my respective wealth and asset management clientele</p>
-      </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-info">
+      <h3>Portfolio Construction</h3>
+      <p>For my respective wealth and asset management clientele</p>
     </div>
-    <div class="project-card">
-     <div class="project-info">
-        <h3>Data Intelligence and Visualization</h3>
-        <p>Developed multiple business intelligence dashboards for the Physical Logistics Department, Nestle Nigeria Agbara Distribution Centre</p>
-      </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-info">
+      <h3>Data Intelligence and Visualization</h3>
+      <p>Developed multiple business intelligence dashboards for the Physical Logistics Department, Nestle Nigeria Agbara Distribution Centre</p>
     </div>
-    <div class="project-card">
-      <div class="project-info">
-        <h3>All-Equity Portfolio Optimization Algorithm</h3>
-        <p>Built an algorithm that can optimize an all-equity portfolio based on a defined set of stocks or the stocks on an index</p>
-      </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-info">
+      <h3>All-Equity Portfolio Optimization Algorithm</h3>
+      <p>Built an algorithm that can optimize an all-equity portfolio based on a defined set of stocks or the stocks on an index</p>
     </div>
   </div>
 </section>
